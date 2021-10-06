@@ -12,13 +12,44 @@
 
 
 <body>
-    <div class="box">
-        <div class="hello">HELLO</div>
-        <div class="my-name">my name is</div>
-        <div class="name">Alice Hsing</div>
-        <div class="footer">Nothing</div>
+    <main>
+        <section>
+            <label class="greeting-button">
+                Greetings:
+                <input id="greeting-input">
+                <button id="update-greeting-button">Update</button>
+            </label>
 
-    </div>
+            <label class="name-button">
+                Name:
+                <input id="name-input">
+                <button id="update-button">Update</button>
+            </label>
+
+            <label class="background-button">
+                Change Backgrounds:
+                <!-- <input id="background-input"> -->
+                <input type="color" name="PINK" id="pink-background-display">
+                <button id="update-pink-button">PINK</button>
+                <!-- <button id="update-lightblue-button">Light Blue</button> -->
+
+
+
+            </label>
+        </section>
+
+
+        <div class="box">
+            <div id="greeting-display" class="hello">HELLO</div>
+            <div class="my-name">my name is</div>
+            <div id="name-display" class="name">Alice Hsing</div>
+            <div class="footer">Nothing</div>
+
+        </div>
+
+        <script src="app.js" type="module"></script>
+
+    </main>
 </body>
 
 </html>
